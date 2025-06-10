@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tasksFragment"
+        android:icon="@drawable/ic_task"
+        android:title="Tasks" />
+    
+    <item
+        android:id="@+id/travelFragment"
+        android:icon="@drawable/ic_travel"
+        android:title="Travel" />
+    
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/ic_profile"
+        android:title="Profile" />
+</menu>

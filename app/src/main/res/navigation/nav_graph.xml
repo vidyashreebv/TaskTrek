@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/nav_graph"
+             app:startDestination="@id/tasksFragment">
+
+    <fragment
+        android:id="@+id/tasksFragment"
+        android:name="com.example.tasktrek.TasksFragment"
+        android:label="Tasks">
+        <action
+            android:id="@+id/actionTasksFragmentToTaskDetailFragment"
+            app:destination="@id/taskDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/travelFragment"
+        android:name="com.example.tasktrek.TravelFragment"
+        android:label="Travel">
+        <action
+            android:id="@+id/actionTravelFragmentToTravelDetailFragment"
+            app:destination="@id/travelDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.tasktrek.ProfileFragment"
+        android:label="Profile" />
+
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.example.tasktrek.TaskDetailFragment"
+        android:label="Task Details">
+        <argument
+            android:name="taskId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/travelDetailFragment"
+        android:name="com.example.tasktrek.TravelDetailFragment"
+        android:label="Travel Details">
+        <argument
+            android:name="travelId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+</navigation>
